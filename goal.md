@@ -13,5 +13,7 @@
 * Author \(for all types of movie: director)
 * Year of release
 * Position in Cupboard
+* Suitable for children?
+
 ###For games:
 * Number of players
