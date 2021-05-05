@@ -22,7 +22,7 @@ class MyGrid(GridLayout):
         self.lastName = TextInput(multiline=False)
         self.inside.add_widget(self.lastName)
 
-        self.add_widget(self.inside)
+        self.add_widget(self.inside)  # Grid for the text labels and input fields
 
         self.inside.add_widget(Label(text="E-Mail: "))
         self.email = TextInput(multiline=False)
