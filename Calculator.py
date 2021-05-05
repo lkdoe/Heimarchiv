@@ -1,4 +1,6 @@
 # My own idea for a calculator
+#floating point input only works by using the keyboard.
+
 from tkinter import *
 
 root = Tk()
