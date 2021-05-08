@@ -13,7 +13,7 @@ class cube(object):
     def move(self, dirnx, dirny):
         self.dirnx = dirnx
         self.dirny = dirny
-        self.pos(self.pos[0] + self.dirnx, self.pos[1] + self.dirny)
+        self.pos = (self.pos[0] + self.dirnx, self.pos[1] + self.dirny)
 
     def draw(self, surface, eyes=False):
         dis = self.w // self.rows
@@ -44,6 +44,7 @@ class snake(object):
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
+
             keys = pygame.key.get_pressed()
 
             for key in keys:
@@ -128,10 +129,16 @@ def main():
     flag = True
 
     clock = pygame.time.Clock()
+
     while flag:
         pygame.time.delay(50)
-        clock.tick(10)
+        clock.tick(8)
+        s.move()
+
 
         redrawWindow(win)
+
+
+    pass
 
 main()
