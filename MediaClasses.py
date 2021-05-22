@@ -24,13 +24,17 @@ class Media:
 
 
 # Test:
-rh = Media("Der Räuber Hotzenplotz")
+def test():
+    rh = Media("Der Räuber Hotzenplotz")
 
-print("Titel: ", rh)
+    print("Titel: ", rh)
 
-rh.set_attr('author', 'Ottfried Preußler')
+    rh.set_attr('author', 'Otfried Preußler')
 
-print(rh.title, "ist von", rh.author)
-for item in rh.__dict__.items():
-    print(item)
-print("Ende")
+    print(rh.title, "ist von", rh.author)
+    for item in rh.__dict__.items():
+        print(item)
+    print("Ende")
+
+if __name__ == "__main__":
+    test()
