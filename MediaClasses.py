@@ -4,7 +4,7 @@ class Media:
         self.author = ""  # For books
         self.director = ""  # For Movies
         self.year = ""
-        self.medium = ""  # Media type
+        self.category = ""  # Media type
         self.genre = ""
         self.subgenre = ""
         self.players = 0  # For games
@@ -17,10 +17,10 @@ class Media:
     def get_attr(self, key):
         return self.__dict__[key]
 
-    def __del__(self):
-        delstatement = str(self.title + " has been deleted.")
-        print(delstatement)
-        return delstatement
+    # def __del__(self):
+    #     delstatement = str(self.title + " has been deleted.")
+    #     print(delstatement)
+    #     return delstatement
 
 
 # Test:
